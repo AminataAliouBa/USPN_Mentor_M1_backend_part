@@ -1,5 +1,9 @@
 # USPN-mentor
   ` plateforme intra-universitaire pour tout les étudiants.`
+
+ ## Front-end done by
+ * Myriam CHINE
+ * Wadi ZNANI
  
  ## Backend
  * Mysql
