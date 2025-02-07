@@ -1,0 +1,125 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: black; /* Pour un meilleur contraste avec l'arrière-plan sombre */
+}
+
+nav {
+    background-color: #1F2546;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+nav.top-nav div {
+    margin-right: 75px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+nav.top-nav .logo {
+    padding : 10px;
+    margin:0;
+}
+
+/* Image du logo */
+nav.top-nav .logo img {
+    height: 70px; /* Hauteur du logo, à ajuster selon vos besoins */
+}
+
+/* Éléments de navigation à droite */
+nav.top-nav .nav-items {
+    display: flex;
+    gap: 3rem; /* Espace entre les éléments de navigation */
+}
+
+
+nav.top-nav .nav-item {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* État hover pour les liens */
+nav.top-nav .nav-item:hover {
+    background-color: white; /* Bleu un peu plus clair pour l'interaction */
+    border-radius: 5px; /* Bordures arrondies au survol */
+}
+
+
+/* Contenu principal */
+main {
+    display: flex; /* Utilisez flex pour une disposition flexible */
+    flex-direction: row; /* Empile les enfants verticalement */
+    align-items: center; /* Centre horizontalement dans le conteneur flex */
+    justify-content: flex-start; /* Alignez le contenu en haut */
+    width: 100%; /* Utilise la largeur complète */
+    height: calc(100vh - 20px); /* Hauteur ajustée pour les barres de navigation */
+    background: #F5F1F4; /* Couleur de fond semi-transparente */
+}
+
+/* Mise en page du contenu intérieur */
+.content, h1 {
+    width: 90%; /* Utilisez un pourcentage de la largeur pour un design réactif */
+    max-width: auto; /* Largeur maximale pour le contrôle sur les grands écrans */
+    margin: 1rem auto; /* Marges pour le centrage et l'espace autour du contenu */
+    display: flex; /* Flex pour disposer les enfants côte à côte */
+}
+
+
+
+.sidebar {
+    margin-left: 2rem; /* Espacement entre les contenus principal et latéral */
+    padding: 2rem;
+    background-color: white; /* Couleur de fond définie sur blanc */
+    border: 5px solid #786A5A; /* Bordure marron, ajustez l'épaisseur comme vous le souhaitez */
+    border-radius: 10px; /* Bords arrondis */
+}
+
+
+/* Bouton de réservation */
+.reservation-link {
+    margin-top: 1rem; /* Espacement au-dessus du lien de réservation */
+}
+
+div h2, div p {
+    margin: 10px;
+    padding : 10px;
+}
+
+.reservation-link a {
+    display: inline-block; /* Rend le lien similaire à un bouton */
+    padding: 0.5rem 1rem;
+    background-color: #786A5A;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+}
+
+.reservation-link a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1); /* Ajoute une ombre légère */
+}
+
+
+/* Pied de page */
+footer {
+    background-color: #202445;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

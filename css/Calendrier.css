@@ -1,0 +1,177 @@
+/* Améliore l'apparence générale du calendrier */
+.fc {
+    font-family: Arial, sans-serif; /* Assurez-vous que la police est cohérente */
+    color: #333; /* Couleur du texte plus douce */
+}
+
+/* Personnalise l'arrière-plan et le texte des cellules du jour courant */
+.fc .fc-day-today {
+    background-color: #eaf6ff; /* Arrière-plan bleu clair pour aujourd'hui */
+    color: #000; /* Texte noir pour une meilleure lisibilité */
+    border: 1px solid #a0dfff; /* Bordure pour distinguer aujourd'hui */
+}
+
+/* Personnalise l'apparence des événements */
+.fc .fc-event {
+    background-color: #3174ad; /* Bleu sombre pour les événements */
+    border: 1px solid #205375; /* Bordure des événements */
+    border-radius: 3px; /* Bordures arrondies */
+    color: white; /* Texte blanc pour le contraste */
+    font-size: 0.875rem; /* Taille du texte ajustée */
+    padding: 2px 4px; /* Ajustement du padding pour les événements */
+}
+
+/* Change l'apparence des cellules hors mois dans le vue Mois */
+.fc .fc-daygrid-day.fc-day-other {
+    background-color: #f8f9fa; /* Gris très clair pour les jours hors mois */
+}
+
+
+
+----
+
+/* Amélioration globale du style du calendrier */
+.fc {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Police plus moderne */
+    color: #4E5D6C; /* Couleur de texte élégante */
+}
+
+/* Améliore l'esthétique de l'en-tête */
+.fc .fc-toolbar.fc-header-toolbar {
+    background-color: #35485D; /* Bleu foncé pour l'en-tête */
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 8px; /* Arrondit les coins supérieurs */
+    border-top-right-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour de la profondeur */
+}
+
+/* Style des titres pour plus de clarté */
+.fc .fc-toolbar-title {
+    font-size: 20px; /* Augmente la taille pour plus de visibilité */
+    font-weight: bold;
+}
+
+/* Style des boutons pour un look plus moderne */
+.fc .fc-button {
+    background-color: #5D6D7E; /* Gris bleu pour les boutons */
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px; /* Boutons avec coins arrondis */
+    font-size: 14px;
+    transition: background-color 0.3s; /* Transition douce pour le survol */
+}
+
+.fc .fc-button:hover {
+    background-color: #4E5F70; /* Assombrir le bouton au survol */
+}
+
+/* Personnalise l'affichage des jours et des heures */
+.fc .fc-daygrid-day-top,
+.fc .fc-timegrid-slot-label-cushion {
+    color: #35485D; /* Couleur de texte coordonnée à l'en-tête */
+    font-weight: bold;
+}
+
+/* Style des cellules de jours pour différencier le week-end */
+.fc .fc-day-sat,
+.fc .fc-day-sun {
+    background-color: #EAEFF5; /* Légère couleur de fond pour le week-end */
+}
+
+/* Met en évidence le jour courant de manière plus distincte */
+.fc .fc-day-today {
+    background-color: #FFD966; /* Jaune doux pour aujourd'hui */
+    color: #4E5D6C;
+    border: 1px solid #FFC107;
+}
+
+/* Style des cellules d'événements pour les rendre plus attractives */
+.fc .fc-event {
+    background-color: #4E5D6C; /* Harmonie avec la couleur du texte */
+    border-color: #35485D;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s; /* Effets au survol */
+}
+
+.fc .fc-event:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+/* Adaptations pour les vues spécifiques, comme le mois ou la semaine */
+.fc .fc-daygrid-day-number {
+    font-size: 16px;
+    color: #35485D;
+}
+
+
+-----
+
+/* Style de base pour le calendrier */
+.fc {
+    font-family: Arial, sans-serif; /* Police cohérente avec l'image */
+    color: #333; /* Couleur de texte comme dans l'image */
+    font-size: 14px; /* Taille de police standard */
+}
+
+/* Style pour les en-têtes de chaque colonne (jours) */
+.fc .fc-col-header-cell {
+    background-color: #f3f3f3; /* Couleur de fond de l'en-tête */
+    color: #333; /* Couleur du texte de l'en-tête */
+    padding: 10px 0; /* Espace intérieur pour l'en-tête */
+    border-right: 1px solid #ddd; /* Ligne de séparation des colonnes */
+}
+
+/* Style pour l'en-tête du calendrier (boutons et titre) */
+.fc .fc-toolbar {
+    background-color: #fff; /* Arrière-plan de la barre d'outils */
+    color: #333; /* Couleur du texte de la barre d'outils */
+    padding: 10px; /* Espace intérieur pour la barre d'outils */
+    border-bottom: 2px solid #eaeaea; /* Bordure inférieure pour l'en-tête */
+}
+
+/* Style des boutons de l'en-tête */
+.fc .fc-button {
+    background-color: #eaeaea; /* Arrière-plan des boutons */
+    color: #333; /* Couleur du texte des boutons */
+    border: none; /* Pas de bordure pour les boutons */
+    padding: 8px 12px; /* Espace intérieur des boutons */
+}
+
+/* Style des jours de la semaine */
+.fc .fc-daygrid-day {
+    border-right: 1px solid #ddd; /* Ligne de séparation des jours */
+    border-bottom: 1px solid #ddd; /* Ligne de séparation horizontale */
+}
+
+/* Style de l'heure le long du côté */
+.fc .fc-timegrid-slot-label {
+    border-top: 1px solid pink; /* Ligne de séparation horizontale */
+    padding: 4px 8px; /* Espace intérieur pour les étiquettes d'heure */
+}
+
+/* Style pour les événements */
+.fc .fc-event {
+    background-color: #467fcf; /* Couleur de fond des événements, ajustez comme nécessaire */
+    border: 1px solid #467fcf; /* Bordure des événements, ajustez comme nécessaire */
+    border-radius: 3px; /* Coins arrondis pour les événements */
+    color: white; /* Texte blanc pour les événements */
+    padding: 2px 4px; /* Espace intérieur pour les événements */
+}
+
+/* Style pour le marquage de l'heure actuelle */
+.fc .fc-now-indicator-arrow, .fc .fc-now-indicator-line {
+    background-color: #ff0000; /* Couleur rouge pour l'indicateur de l'heure actuelle */
+}
+
+/* Style pour la ligne indiquant l'heure actuelle */
+.fc .fc-timegrid-slot {
+    border-top: 1px solid pink; /* Ligne rouge pour l'heure actuelle */
+}
+

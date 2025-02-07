@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - USPN Mentor</title>
+    <link rel="stylesheet" href="css/Connexion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <header>
+            <img src="logo/logo-universite.png" alt="Logo Université Sorbonne Paris Nord" />
+            <h1>USPN Mentor</h1>
+        </header>
+        <form class="login-form" action="php/traitement.php" method="POST">
+            <h2>Ouvrir une session</h2>
+            <!--
+            <div class="input-group">
+                <label for="username"><i class="icon-user"></i> </label>
+                <input type="text" id="username" name="username" placeholder="Identifiant" required>
+            </div>
+            <div class="input-group">
+                <label for="password"><i class="icon-lock"></i> </label>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+            </div>
+
+-->
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Identifiant" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+            </div>
+
+
+            <a href="#" class="forgot-password">mot de passe oublié / obtenir mes identifiants</a>
+            <button type="submit" name="envoie">ME CONNECTER</button>
+        </form>
+    </div>
+<script>
+// Récupérer les paramètres de l'URL
+const params = new URLSearchParams(window.location.search);
+
+// Vérifier si la variable "error" est présente dans l'URL
+if (params.has('error')) {
+    // Récupérer la valeur de la variable "error"
+    const errorMessage = params.get('error');
+    
+    // Afficher une alerte avec le message d'erreur
+    alert(errorMessage);
+}
+</script>
+
+</body>
+</html>
+
+

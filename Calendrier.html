@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendrier FullCalendar</title>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/Calendrier.css">
+</head>
+<body>
+
+<div id='calendar'></div>
+
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/locales/fr.js'></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'timeGridWeek',
+        slotMinTime: '09:00:00',
+        slotMaxTime: '20:00:00',
+        expandRows: true,
+        nowIndicator: true,
+        allDaySlot: false,
+        locale: 'fr', // Localisation en français
+        timeZone: 'Europe/Paris', // Fuseau horaire pour la France
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        businessHours: {
+            daysOfWeek: [1, 2, 3, 4, 5, 6],
+            startTime: '09:00',
+            endTime: '20:00',
+        },
+        selectable: true,
+        select: function(info) {
+            alert('Créneau sélectionné: ' + info.startStr + ' à ' + info.endStr);
+        }
+    });
+
+    calendar.render();
+});
+</script>
+
+</body>
+</html>

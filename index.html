@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - USPN Mentor</title>
+    <link rel="stylesheet" href="css/Accueil.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo">
+                <img src="logo/logo-universite.png" alt="Logo Université Sorbonne Paris Nord">
+            </div>
+     
+            <div class="nav-items">
+                <a class="nav-item" href="#">ENT</a>
+                <a class="nav-item" href="#">Moodle</a>
+                <a class="nav-item" href="#">Mon espace</a>
+                <!-- Autres liens de navigation si nécessaire -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Séance de travail individuelle ou en groupe</h1>
+            <section class="content">
+                <div class="main-content">
+                    <h2> USPN Mentor</h2>
+                    <p> Dès à présent, le soutien scolaire est possible pour les niveaux allant de PAM à Master 1 dans toutes les filières de l'institut Galilée. Il est possible de de choisir d'être seule et la capacité est de 4 étudiants maximum par créneaux. Il existe 3 formules adaptés au besoin afin de personnaliser votre apprentissage. Ces cours auront lieu au 3ème étage de la bibliothèque universitaire.
+
+                    <h3>Comment réserver</h3>
+                    <p>Maintenant, pour réserver, c'est très simple ! Connectez-vous sur le site de réservation en ligne avec vos identifiants ENT ou inscrivez-vous en choisissant le profil souhaité :
+                </div>
+                <aside class="sidebar">
+                    <h2>Règles d'utilisation</h2>
+                    <ul>
+                        <li> 1 formule par séance </li>
+                        <li> annulation 48h avant maximum </li>
+                    </ul>
+                </aside>
+            </section>
+            <div class="reservation-link">
+                <a href="Connexion.html"> Se connecter </a>
+                <a href="Inscription-tuteur.html"> S'inscrire mode tuteur </a>
+                <a href="Inscription-etudiant.html"> S'inscrire mode étudiant </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Votre footer ici -->
+    </footer>
+<script>
+	// Récupérer les paramètres de l'URL
+	const params = new URLSearchParams(window.location.search);
+
+	// Vérifier si la variable "error" est présente dans l'URL
+	if (params.has('error')) {
+	    // Récupérer la valeur de la variable "error"
+	    const errorMessage = params.get('error');
+	    
+	    // Afficher une alerte avec le message d'erreur
+	    alert(errorMessage);
+}
+</script>
+
+</body>
+</html>

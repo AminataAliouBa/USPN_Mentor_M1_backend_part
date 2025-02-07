@@ -1,0 +1,112 @@
+/* Import de la police Material Icons pour les icônes */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Réinitialisation des marges pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #FAFAFA; /* Couleur de fond claire pour tout le body */
+    color: #212121; /* Couleur de texte principale */
+    line-height: 1.6; /* Espacement des lignes */
+}
+
+
+nav {
+    background-color: #1F2546;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+nav.top-nav div {
+    margin-right: 75px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+nav.top-nav .logo {
+    padding : 10px;
+    margin:0;
+}
+
+/* Image du logo */
+nav.top-nav .logo img {
+    height: 50px; /* Hauteur du logo, à ajuster selon vos besoins */
+}
+
+/* Éléments de navigation à droite */
+nav.top-nav .nav-items {
+    display: flex;
+    gap: 3rem; /* Espace entre les éléments de navigation */
+}
+
+
+nav.top-nav .nav-item {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+body {
+    padding-top: 100px; /* Ajuster en fonction de la hauteur de la barre de navigation */
+}
+
+
+
+/* Styles pour les cartes de réservation */
+.card {
+    background-color: #F5F1F4; /* Fond blanc pour les cartes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée légère */
+    margin-bottom: 20px; /* Espacement entre les cartes */
+    border-radius: 5px; /* Bords arrondis pour les cartes */
+}
+
+.card-content {
+    padding: 20px; /* Espacement à l'intérieur des cartes */
+}
+
+.card-title {
+    font-size: 24px; /* Taille de la police pour le titre des cartes */
+    color: #1F2546; /* Couleur de la police pour le titre */
+    margin-bottom: 10px; /* Espacement après le titre */
+}
+
+.card-action {
+    padding: 20px; /* Espacement à l'intérieur de la section action des cartes */
+    border-top: 2px solid #EEEEEE; /* Ligne de séparation */
+}
+
+.card-action a {
+    color: #786A5A; /* Couleur des liens/actions */
+    font-weight: bold; /* Police en gras */
+    text-transform: uppercase; /* Tous les caractères en majuscules */
+}
+
+/* Hover effet pour les actions */
+.card-action a:hover {
+    color: black; /* Couleur au survol */
+}
+
+/* Footer */
+footer {
+    background-color: #1F2546; /* Couleur de fond du footer */
+    color: white; /* Couleur de texte du footer */
+    text-align: center; /* Texte centré dans le footer */
+    padding: 1rem 0; /* Espacement à l'intérieur du footer */
+    position: fixed; /* Footer fixé en bas */
+    bottom: 0;
+    width: 100%; /* Largeur du footer */
+}

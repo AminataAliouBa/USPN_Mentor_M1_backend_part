@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    background-color: #1F2546; /* Couleur bleu nuit */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav .logo img {
+    height: 50px; /* Ajustez selon vos besoins */
+}
+
+.nav-items {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-form {
+    max-width: 600px; /* Limite la largeur du formulaire */
+    margin: 0 auto; /* Centre le formulaire */
+    padding: 20px; /* Ajoute un espace intérieur */
+    background-color: #f5f5f5; /* Couleur de fond claire */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.contact-form h2 {
+    text-align: center; /* Centre le titre */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Espacement entre les groupes d'entrée */
+}
+
+.input-group label {
+    font-weight: bold; /* Met l'étiquette en gras */
+}
+
+.input-group select,
+.input-group textarea {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 10px; /* Espace intérieur pour le confort */
+    border: 1px solid #ccc; /* Bordure grise légère */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.input-group textarea {
+    resize: none; /* Désactive le redimensionnement */
+}
+
+button {
+    background-color: #1F2546; /* Bleu nuit */
+    color: white; /* Texte blanc */
+    border: none; /* Supprime la bordure */
+    padding: 10px 20px; /* Espace intérieur du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s ease; /* Transition pour le survol */
+}
+
+button:hover {
+    background-color: #3a4a6b; /* Changement de couleur au survol */
+}
+
+footer {
+    text-align: center; /* Centre le texte du pied de page */
+    background-color: #1F2546; /* Bleu nuit */
+    color: white;
+    padding: 10px; /* Espace intérieur du pied de page */
+}

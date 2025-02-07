@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de créneaux avec tuteurs</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="includes/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="includes/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <!-- Materialize CSS from CDN 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"> -->
+    <!-- Material Icons from Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Votre fichier CSS personnalisé -->
+    <link href="../css/ListeDispo.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo">
+                <img src="../logo/logo-universite.png" alt="Logo Université Sorbonne Paris Nord">
+            </div>
+     
+            <div class="nav-items">
+                <a class="nav-item" href="https://ent.univ-paris13.fr">ENT</a>
+                <a class="nav-item" href="#">Moodle</a>
+                <a class="nav-item" href="#">Mon espace</a>
+                <a class="nav-item" href="php/Deconnexion.php">Deconnexion</a>
+                <!-- Autres liens de navigation si nécessaire -->
+            </div>
+        </nav>
+    </header>
+    <div id="PageHolder" class="container">
+        <!-- Les créneaux seront chargés ici -->
+    </div>
+
+    <footer class="page-footer light-blue darken-2">
+        <div class="container">
+            © Université Paris 13
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="includes/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Simule la récupération des créneaux disponibles depuis une API
+            const slots = [
+                { id: 1, nom: 'XXX' , parcours: 'informatique'},
+                { id: 2, nom: 'YYY' , parcours: 'mathématiques'}
+            ];
+
+            const pageHolder = document.getElementById('PageHolder');
+            slots.forEach(slot => {
+                const slotElement = document.createElement('div');
+                slotElement.classList.add('card', 'blue', 'darken-1');
+                slotElement.innerHTML = `
+                    <div class="card-content white-text">
+                        <span class="card-title">Tuteur : ${slot.tuteur}</span>
+                        <p>Date : ${slot.date}, Heure : ${slot.heure}, Mention : ${slot.filière} </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" onclick="reserverSlot(${slot.id})">Réserver</a>
+                    </div>
+                `;
+                pageHolder.appendChild(slotElement);
+            });
+
+        $(document).on('click', '.reservation-link', function(e) {
+        e.preventDefault();
+        var slotId = $(this).data('slotid');
+        reserverSlot(slotId);
+    });
+        });
+
+        
+        function reserverSlot(slotId) {
+            console.log('Tentative de réservation du créneau', slotId);
+
+            // Données à envoyer au serveur
+            var dataToSend = {
+                slotId: slotId
+                // Vous pouvez également inclure d'autres informations ici, comme l'ID de l'utilisateur qui réserve
+            };
+
+            // Effectuer l'appel AJAX
+            $.ajax({
+                url: '/chemin/vers/votre/api/reservation', // URL de votre API ou script de traitement - URL réelle de votre API de backend qui gérera la réservation des créneaux - Si vous n'avez pas encore d'API pour gérer les réservations, vous aurez besoin de créer une, que ce soit avec PHP, Node.js, Python ou tout autre technologie de backend que vous choisissez d'utiliser.
+                type: 'POST',
+                data: dataToSend,
+                success: function(response) {
+                    // Réponse du serveur en cas de succès
+                    console.log(response);
+                    alert(`La réservation du créneau ${slotId} a été effectuée avec succès.`);
+                    // Mettre à jour l'interface utilisateur ici si nécessaire
+                },
+                error: function(xhr, status, error) {
+                    // Gestion des erreurs
+                    console.error(error);
+                    alert(`Une erreur s'est produite lors de la tentative de réservation : ${error}`);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

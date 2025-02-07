@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Tuteur - USPN Mentor</title>
+    <link rel="stylesheet" href="css/PageTuteur.css">
+</head>
+<body>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// Récupérer les paramètres de l'URL
+		const params = new URLSearchParams(window.location.search);
+		
+		// Vérifier si la variable "error" est présente dans l'URL
+		if (params.has('nom')) {
+		    // Récupérer la valeur de la variable "error"
+		    var nameMessage = params.get('nom');
+		}
+		if (params.has('prenom')) {
+		    // Récupérer la valeur de la variable "error"
+		    var firstNameMessage = params.get('prenom');    
+		}
+		var h1 = document.getElementsByTagName("h1")[0];
+		h1.textContent = "Tuteur: "+ nameMessage + " " + firstNameMessage;
+		});
+</script>
+    <header>
+        <nav class="top-nav">
+            <div class="logo">
+                <img src="logo/logo-universite.png" alt="Logo Université Sorbonne Paris Nord">
+            </div>
+            <div class="nav-items">
+                <a class="nav-item" href="ENT.html">ENT</a>
+                <a class="nav-item" href="Moodle.html">Moodle</a>
+                <a class="nav-item" href="MonEspace.html">Mon espace</a>
+                <a class="nav-item" href="php/Deconnexion.php">Deconnexion</a>
+                <!-- Autres liens de navigation si nécessaire -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1></h1>
+            <section class="content">
+                <div class="main-content">
+                    <h2> USPN Mentor</h2>
+                    
+
+        
+                <aside class="sidebar">
+                    <h2>Règles d'utilisation</h2>
+                    <ul>
+                        <li> 1 formule par séance </li>
+                        <li> annulation 48h avant maximum </li>
+                    </ul>
+                </aside>
+            </section>
+            <div class="reservation-link">
+                <a href="Calendrier.html"> Calendrier </a>
+                <a href="ListeEtudiantsDispo.html"> Étudiants Disponibles </a>
+                <a href="Contact.html"> Contacts </a>
+                <a href="setting.html"> Paramètre </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 USPN Mentor - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - USPN Mentor</title>
+    <link rel="stylesheet" href="css/Inscription.css">
+</head>
+<body>
+    <header>
+        <!-- <h1>Inscription à USPN Mentor</h1> -->
+    </header>
+    <main>
+        <section>
+            <h2>Inscription Tuteur</h2>
+            <form action="php/traitement.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="identifiant" placeholder="Identifiant" required>
+                <input type="password" name="password1" placeholder="Password" required>
+                <input type="password" name="password2" placeholder="Confirmer password" required>
+                <button type="submit" name="envoieIT">S'inscrire comme Tuteur</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 USPN Mentor - Tous droits réservés</p>
+    </footer>
+<script>
+// Récupérer les paramètres de l'URL
+const params = new URLSearchParams(window.location.search);
+
+// Vérifier si la variable "error" est présente dans l'URL
+if (params.has('error')) {
+    // Récupérer la valeur de la variable "error"
+    const errorMessage = params.get('error');
+    
+    // Afficher une alerte avec le message d'erreur
+    alert(errorMessage);
+}
+</script>
+
+</body>
+</html>

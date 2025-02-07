@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://static.lpnt.fr/images/2018/05/04/14674087-14674086-g-jpg_5216054_1000x667.jpg') no-repeat center center;
+    background-size: cover; /* Assure que l'image couvre tout le fond */
+    display: flex;                                                          /* responsable du décalage de l'image pb */
+    align-items: center; /* Centre le contenu verticalement */
+    justify-content: center; /* Centre le contenu horizontalement */
+}
+
+/* Assurez-vous que le formulaire a un fond qui permet de voir le texte */
+.login-container {
+    /* vos styles existants */
+    background: rgba(25, 33, 55, 0.8); /* Un fond semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Une ombre pour le relief */
+    /* autres styles */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem; /* Agrandissez selon l'importance dans la page */
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 380px;
+    margin: 0px;
+    background: #192137; /* Couleur de fond de la section */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    color: white;
+    font-size: 1.5rem; /* Adapté pour les sous-titres */
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; /* Espacement sous le titre de section */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+input[type="file"] {
+    padding: 12px;
+    margin-bottom: 1rem; /* Espacement entre les champs */
+    border-radius: 5px;
+    border: 1px solid #ffffff; /* Bordure pour les champs de saisie */
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+    color: #bbb;
+}
+
+button {
+    padding: 12px;
+    background-color: #786A5A; /* Couleur du bouton */
+    color: white;
+    border-radius: 5px; /* Bordures arrondies du bouton */
+    font-size: 1rem; /* Taille du texte dans le bouton */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 1rem; /* Espacement au-dessus du bouton */
+}
+
+button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ombre légère pour l'interaction */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #131a2f; /* Fond du footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 2rem; /* Espacement au-dessus du footer */
+}
+
+/* Style pour l'affichage des messages de droits réservés */
+footer p {
+    font-size: 0.8rem;
+}

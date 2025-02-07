@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte un tuteur - USPN Mentor</title>
+    <link rel="stylesheet" href="saisie.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo">
+                <img src="logo-universite.png" alt="Logo Université Sorbonne Paris Nord">
+            </div>
+            <div class="nav-items">
+                <a class="nav-item" href="dashboard.html">Retour au tableau de bord</a> <!-- Lien pour revenir au tableau de bord -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-form">
+            <h2>Envoyer un message à un tuteur</h2>
+            <form action="contact.php" method="POST"> <!-- Le formulaire envoie les données au script PHP -->
+                <div class="input-group">
+                    <label for="tutor">Sélectionner un tuteur</label>
+                    <select name="tutor" id="tutor" required>
+                        <!-- Options pour les tuteurs, à remplir dynamiquement par PHP -->
+                        <option value="1">Tuteur 1</option>
+                        <option value="2">Tuteur 2</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Écrivez votre message ici" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 USPN Mentor - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

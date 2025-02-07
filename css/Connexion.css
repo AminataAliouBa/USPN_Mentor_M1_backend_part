@@ -1,0 +1,216 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1F2546; /* Adaptez la couleur de fond pour correspondre à l'image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 150px; /* Réduisez la taille selon vos besoins */
+    height: auto; /* Cela maintiendra le rapport largeur/hauteur de l'image */
+    display: block; /* Cela place l'image sur sa propre ligne */
+    margin: 0 auto; /* Cela centre l'image dans l'en-tête */
+}
+
+.login-container {
+    width: 380px; /* Ajustez la largeur du formulaire si nécessaire */
+    padding: 40px;
+    background: #192137; /* Couleur de fond du conteneur de connexion */
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9); /* Ombre portée pour le conteneur */
+}
+
+header h1 {
+    color: white;
+    font-size: 18px; /* Taille du texte de l'en-tête */
+    margin-bottom: 40px; /* Espace sous l'en-tête */
+    text-align: center;
+}
+
+.login-form h2 {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 30px; /* Espace sous le titre du formulaire */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px; /* Espace entre les champs de formulaire */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white; /* Bordure en bas de l'input */
+    outline: none;
+    color: white;
+    font-size: 16px; /* Taille du texte dans les champs */
+}
+
+.input-group input::placeholder {
+    color: #bbb; /* Couleur pour le placeholder */
+}
+
+.forgot-password {
+    display: block;
+    color: #5591ff; /* Couleur du lien pour mot de passe oublié */
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px; /* Taille du texte pour mot de passe oublié */
+    margin-bottom: 30px; /* Espace sous le lien */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #786A5A; /* Couleur du bouton */
+    color: white;
+    border-radius: 5px; /* Bordures arrondies du bouton */
+    cursor: pointer;
+    font-size: 18px; /* Taille du texte dans le bouton */
+    transition: 0.2s all;
+}
+
+button:hover {
+    /*background-color: #4682b4; /* Couleur du bouton au survol */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1); /* Ajoute une ombre légère */
+}
+
+
+
+/* Si vous avez un pied de page */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #131a2f; /* Couleur de fond pour correspondre au body */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+/* Ajoutez cette base au CSS existant */
+
+.input-group {
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #ffffff;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour les icônes des inputs */
+.input-group i {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+/* Vous pouvez utiliser des icônes de FontAwesome ou une bibliothèque similaire, ou utiliser des images */
+.input-group .icon-user:before {
+    content: "\f007"; /* Code unicode pour l'icône utilisateur de FontAwesome */
+    font-family: "FontAwesome";
+}
+
+.input-group .icon-lock:before {
+    content: "\f023"; /* Code unicode pour l'icône cadenas de FontAwesome */
+    font-family: "FontAwesome";
+}
+
+.forgot-password {
+    color: #a8b1c2;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block; /* Assurez-vous que c'est bien un bloc pour aligner correctement */
+}
+
+/* Assurez-vous que cette classe est ajoutée à votre bouton de soumission */
+button {
+    background-color: #786A5A; /* Couleur du bouton de soumission */
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-top: 30px; /* Espace au-dessus du bouton */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+i.fas, i.far, i.fal, i.fat, i.fab {
+    font-style: normal !important;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 10;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Adjust left padding to make room for the icon */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    /* Ensures text doesn't overlap the icon */
+    box-sizing: border-box; /* Inclus le padding et la bordure dans la largeur totale */
+
+}
+
+

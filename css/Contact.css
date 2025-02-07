@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: black; /* Pour un meilleur contraste avec l'arrière-plan sombre */
+}
+
+nav {
+    background-color: #1F2546;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+nav.top-nav div {
+    margin-right: 75px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+nav.top-nav .logo {
+    padding : 10px;
+    margin:0;
+}
+
+/* Image du logo */
+nav.top-nav .logo img {
+    height: 70px; /* Hauteur du logo, à ajuster selon vos besoins */
+}
+
+/* Éléments de navigation à droite */
+nav.top-nav .nav-items {
+    display: flex;
+    gap: 3rem; /* Espace entre les éléments de navigation */
+}
+
+nav.top-nav .nav-item {
+    text-decoration: none;
+    color: white;
+}
+
+/* État hover pour les liens */
+nav.top-nav .nav-item:hover {
+    background-color: white; /* Bleu un peu plus clair pour l'interaction */
+    border-radius: 5px; /* Bordures arrondies au survol */
+    color:black
+}
+
+/* Contenu principal */
+main {
+    display: flex; /* Utilisez flex pour une disposition flexible */
+    flex-direction: column; /* Arrangez les enfants verticalement */
+    align-items: center; /* Centrez horizontalement dans le conteneur flex */
+    justify-content: center; /* Centrez verticalement dans le conteneur flex */
+    width: 100%; /* Utilise la largeur complète */
+    height: calc(100vh - 20px); /* Hauteur ajustée pour les barres de navigation */
+    background: #F5F1F4; /* Couleur de fond semi-transparente */
+}
+
+/* Pied de page */
+footer {
+    background-color: #202445;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.input-group select,
+.input-group textarea {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 10px; /* Espace intérieur pour le confort */
+    border: 1px solid #ccc; /* Bordure grise légère */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.input-group textarea {
+    resize: none; /* Désactive le redimensionnement */
+}
+.contact-form {
+    max-width: 600px; /* Limite la largeur du formulaire */
+    margin: 0 auto; /* Centre le formulaire */
+    padding: 20px; /* Ajoute un espace intérieur */
+    background-color: #f5f5f5; /* Couleur de fond claire */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+    text-align: left; /* Aligne le texte à gauche */
+    }
+
