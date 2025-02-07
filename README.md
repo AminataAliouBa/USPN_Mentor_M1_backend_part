@@ -5,7 +5,7 @@
  * Myriam CHINE
  * Wadi ZNANI
  
- ## Backend
+ ## Back-end (My part)
  * Mysql
  * PHP
  * Apache2
